@@ -38,11 +38,12 @@ fingerprints:
   rule_id: AS3
   file: SKILL.md
   reason: Attribution URL in credits metadata pointing to the upstream skill source. It is not an instruction to read another skill.
-- hash: sha256:0f43a0c5bb1e74ab22f55e4b26551a53fc49004c9b95e66a4fb0d218e7bec01a
-  rule_id: AS3
-  file: SKILL.md
-  reason: Attribution URL in credits metadata pointing to the upstream skill source. It is not an instruction to read another skill.
 - hash: sha256:6801f7f746136e66192c89d16b963c20f80996a8ae6bcb293e3c966e3562a7b1
   rule_id: EA2
   file: SKILL.md
   reason: Setup skill writes the default single-context domain-docs layout without asking. Label names and multi-context layouts are confirmed with the user. Accepted as is.
+- hash: sha256:480f11057db3ac65d9b79bd7ea0f80dac1e485f877fdfc0ed9b528e25f0d7ad1
+  rule_id: AS3
+  file: SKILL.md
+  reason: Attribution URL in credits metadata pointing to the upstream skill source.
+    It is not an instruction to read another skill.

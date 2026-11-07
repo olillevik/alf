@@ -1,0 +1,7 @@
+name: triage
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/grilling
+    - olillevik/alf/dist/skills/domain-modeling
+    - olillevik/alf/dist/skills/setup-alf

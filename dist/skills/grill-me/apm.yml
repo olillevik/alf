@@ -1,0 +1,5 @@
+name: grill-me
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/grilling

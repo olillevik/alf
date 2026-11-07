@@ -4,9 +4,9 @@ description: "Turn the current conversation into a spec and publish it to the pr
 disable-model-invocation: true
 ---
 
-Follow the skill in full at `../../assets/mattpocock/to-spec/SKILL.md`. Read it first and do what it says, using the reference files beside it.
+Follow the skill in full at `../../upstream/mattpocock/to-spec/SKILL.md`. Read it first and do what it says, using the reference files beside it.
 
-<!-- Local additions go between the markers. scripts/update-assets.sh rewrites everything else. -->
+<!-- Local additions go between the markers. scripts/update-upstream.sh rewrites everything else. -->
 <!-- overlay:start -->
 ## Setup skill name
 

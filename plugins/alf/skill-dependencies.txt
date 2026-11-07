@@ -1,0 +1,24 @@
+# Skills that a skill names. Names are wrapper names, the folders under plugins/alf/skills/.
+#
+# <skill>: <dependency> ...         The skill calls these skills by name. scripts/build-apm.sh writes
+#                                   them into dist/skills/<skill>/apm.yml, so APM installs them too.
+# <skill> mentions: <name> ...      The skill names these skills without calling them: attribution,
+#                                   label or type names, or a conditional check.
+#
+# The build fails when a skill names another skill that is in neither list, so each new name needs
+# a decision here.
+pr mentions: show-me
+setup-alf mentions: triage to-spec to-tickets pr research prototype grilling
+ask-alf: grill-with-docs grill-me grilling handoff prototype to-spec to-tickets implement implement-spec tdd code-review pr retro triage diagnosing-bugs improve-codebase-architecture wayfinder research to-questionnaire wait-what teach wizard writing-for-agents domain-modeling codebase-design setup-alf
+code-review: setup-alf
+implement: tdd code-review
+implement-spec: tdd code-review to-spec to-tickets setup-alf
+improve-codebase-architecture: codebase-design grilling domain-modeling
+grill-me: grilling
+grill-with-docs: grilling domain-modeling
+tdd: codebase-design code-review
+retro: writing-for-agents
+triage: grilling domain-modeling setup-alf
+to-spec: setup-alf
+to-tickets: setup-alf
+wayfinder: research prototype grilling domain-modeling setup-alf

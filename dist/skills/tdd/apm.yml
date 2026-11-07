@@ -1,0 +1,6 @@
+name: tdd
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/codebase-design
+    - olillevik/alf/dist/skills/code-review

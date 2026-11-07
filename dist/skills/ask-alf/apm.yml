@@ -1,0 +1,30 @@
+name: ask-alf
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/grill-with-docs
+    - olillevik/alf/dist/skills/grill-me
+    - olillevik/alf/dist/skills/grilling
+    - olillevik/alf/dist/skills/handoff
+    - olillevik/alf/dist/skills/prototype
+    - olillevik/alf/dist/skills/to-spec
+    - olillevik/alf/dist/skills/to-tickets
+    - olillevik/alf/dist/skills/implement
+    - olillevik/alf/dist/skills/implement-spec
+    - olillevik/alf/dist/skills/tdd
+    - olillevik/alf/dist/skills/code-review
+    - olillevik/alf/dist/skills/pr
+    - olillevik/alf/dist/skills/retro
+    - olillevik/alf/dist/skills/triage
+    - olillevik/alf/dist/skills/diagnosing-bugs
+    - olillevik/alf/dist/skills/improve-codebase-architecture
+    - olillevik/alf/dist/skills/wayfinder
+    - olillevik/alf/dist/skills/research
+    - olillevik/alf/dist/skills/to-questionnaire
+    - olillevik/alf/dist/skills/wait-what
+    - olillevik/alf/dist/skills/teach
+    - olillevik/alf/dist/skills/wizard
+    - olillevik/alf/dist/skills/writing-for-agents
+    - olillevik/alf/dist/skills/domain-modeling
+    - olillevik/alf/dist/skills/codebase-design
+    - olillevik/alf/dist/skills/setup-alf

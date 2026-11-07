@@ -1,0 +1,5 @@
+name: code-review
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/setup-alf

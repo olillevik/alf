@@ -4,19 +4,25 @@ vars:
   SKILLSPECTOR_SOURCE: "git+https://github.com/NVIDIA/skillspector.git@v2.13.4"
 
 tasks:
-  update-assets:
-    desc: Move unpinned assets to latest. SKILL=name moves one asset, REF=rev pins it, DRY_RUN=1 only plans.
+  update-upstream:
+    desc: Move unpinned upstream skills to latest. SKILL=name moves one upstream skill, REF=rev pins it, DRY_RUN=1 only plans.
     cmds:
-      - scripts/update-assets.sh update {{if .DRY_RUN}}--dry-run {{end}}{{if .REF}}--ref {{.REF}} {{end}}{{if .SKILL}}{{.SKILL}}{{end}}
+      - scripts/update-upstream.sh update {{if .DRY_RUN}}--dry-run {{end}}{{if .REF}}--ref {{.REF}} {{end}}{{if .SKILL}}{{.SKILL}}{{end}}
+
+  build-apm:
+    desc: Build the APM skill bundles and dist/user-apm.yml from plugins/alf. Commit dist/ with the change.
+    cmds:
+      - scripts/build-apm.sh
 
   ci:
-    desc: Scan the alf skills and upstream assets with SkillSpector, static only (no LLM). CI runs this same task.
+    desc: Check dist/ matches a fresh build, then scan the alf skills and upstream skills with SkillSpector, static only (no LLM). CI runs this same task.
     preconditions:
       - sh: command -v uvx
         msg: "uvx not found. Install uv with: brew install uv"
       - sh: command -v jq
         msg: "jq not found. Install it with: brew install jq"
     cmds:
+      - scripts/build-apm.sh --check
       - sh scripts/skillspector-ci.sh
 
   hooks:install:

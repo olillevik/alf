@@ -1,0 +1,7 @@
+name: improve-codebase-architecture
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/codebase-design
+    - olillevik/alf/dist/skills/grilling
+    - olillevik/alf/dist/skills/domain-modeling

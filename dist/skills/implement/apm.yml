@@ -1,0 +1,6 @@
+name: implement
+version: 1.0.0
+dependencies:
+  apm:
+    - olillevik/alf/dist/skills/tdd
+    - olillevik/alf/dist/skills/code-review
